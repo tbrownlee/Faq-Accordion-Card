@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+    <main>
+        <div class="images-div">
+            <picture>
+                <source media="(max-width: 400px)" srcset="./images/illustration-woman-online-mobile.svg">
+                <source media="(min-width: 401px)" srcset="./images/illustration-woman-online-desktop.svg">
+                <img class="illustration" src="./images/bg-pattern-desktop.svg" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width: 400px)" srcset="./images/bg-pattern-mobile.svg">
+                <source media="(min-width: 401px)" src="./images/bg-pattern-desktop.svg">
+                <img class="background" src="./images/bg-pattern-desktop.svg" alt="Desktop">
+            </picture>
+        </div>
+
+        <img class="box-desktop-only" id="box" src="./images/illustration-box-desktop.svg" alt="Box">
+
+        <div class="text">
+            <h1 class="faq">FAQ</h1>
+            <div class="dropdown-section">
+                <div class="dropdown-container">
+                    <div class="question-and-arrow-container">
+                        <h2 class="question">How many team members can I invite?</h2>
+                        <img class="arrow" src="./images/icon-arrow-down.svg" alt="Arrow">
+                    </div>
+                    <p class="description">You can invite up to 2 additional users on the Free plan. There is no limit
+                        on team members for the Premium plan.</p>
+                </div>
+                <div class="dropdown-container">
+                    <div class="question-and-arrow-container">
+                        <h2 class="question">What is the maximum file upload size?</h2>
+                        <img class="arrow" src="./images/icon-arrow-down.svg" alt="Arrow">
+                    </div>
+                    <p class="description">No more than 2GB. All files in your account must fit your allotted storage
+                        space.
+                    </p>
+                </div>
+                <div class="dropdown-container">
+                    <div class="question-and-arrow-container">
+                        <h2 class="question">How do I reset my password?</h2>
+                        <img class="arrow" src="./images/icon-arrow-down.svg" alt="Arrow">
+                    </div>
+                    <p class="description">Click “Forgot password” from the login page or “Change password” from your
+                        profile page. A reset link will be emailed to you.</p>
+                </div>
+                <div class="dropdown-container">
+                    <div class="question-and-arrow-container">
+                        <h2 class="question">Can I cancel my subscription</h2>
+                        <img class="arrow" src="./images/icon-arrow-down.svg" alt="Arrow">
+                    </div>
+                    <p class="description">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div>
+                <div class="dropdown-container">
+                    <div class="question-and-arrow-container">
+                        <h2 class="question">Do you provide additional support?</h2>
+                        <img class="arrow" src="./images/icon-arrow-down.svg" alt="Arrow">
+                    </div>
+                    <p class="description">Chat and email support is available 24/7. Phone lines are open during normal
+                        business hours.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

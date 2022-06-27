@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /* Text*/
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Background Gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background: linear-gradient(to bottom right, var(--soft-violet), var(--soft-blue));
+
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+    position: relative;
+
+    box-shadow: 0rem 3.5rem 3rem 0rem rgba(0, 0, 0, .25);
+
+    border-radius: 2.2rem;
+    padding: 13.5rem 2.3rem 5rem 2.3rem;
+    width: 88%;
+    height: 55.1rem;
+
+    background-color: white;
+}
+
+/* Images/ pictures */
+picture {
+    display: flex;
+    justify-content: center;
+}
+
+.illustration {
+    position: absolute;
+    z-index: 1;
+    top: -11.1rem;
+
+    width: 75%;
+}
+
+.background {
+    position: absolute;
+    top: 0rem;
+
+    width: 75%;
+}
+
+/* Box */
+.box-desktop-only {
+    display: none;
+}
+
+/* Text div */
+.text h1 {
+    margin-bottom: 1.3rem;
+
+    font-size: 3.1rem;
+    text-align: center;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 1px solid var(--light-grayish-blue);
+    padding: 1.7rem 0;
+
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+}
+
+.question-and-arrow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.question-and-arrow-container:hover {
+    cursor: pointer;
+}
+
+.question-and-arrow-container:hover h2 {
+    color: var(--soft-red);
+}
+
+.question {
+    margin-left: .1rem;
+
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--very-dark-grayish-blue);
+}
+
+.arrow {
+    transition: 0.3s ease-in-out;
+}
+
+.description {
+    display: none;
+
+    margin-top: 1rem;
+    padding-right: 2rem;
+
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 401px) {
+    body {
+        background: linear-gradient(to top, var(--soft-blue), var(--soft-violet))
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+
+        margin-top: none;
+        box-shadow: 0rem 2.5rem 3.5rem 0rem rgba(0, 0, 0, .3);
+        width: 91rem;
+        height: 50rem;
+        padding: 0;
+    }
+
+    /* Images div */
+    .images-div {
+        position: relative;
+
+        overflow: hidden;
+
+        width: 50%;
+    }
+
+    .illustration {
+        position: absolute;
+        top: 6.5rem;
+        right: 6.1rem;
+
+        width: 46rem;
+    }
+
+    .background {
+        position: absolute;
+        top: -29.5rem;
+        right: 6.1rem;
+
+        width: 95rem;
+    }
+
+    /* Box */
+    .box-desktop-only {
+        position: absolute;
+        z-index: 2;
+        top: 20rem;
+        right: 81.7rem;
+
+        display: block;
+
+        transition: 0.3s ease-in-out;
+
+        width: 18rem;
+    }
+
+    /* Text div */
+    .text {
+        margin-left: 3rem;
+        width: 50%;
+        padding: 6rem 0rem 10rem 0rem;
+    }
+
+    .text h1 {
+        margin-bottom: 1.8rem;
+
+        font-size: 3.2rem;
+        text-align: left;
+    }
+
+    .dropdown-section {
+        width: 35rem;
+    }
+
+    .dropdown-container {
+        padding: 1.65rem 0;
+    }
+
+    .question {
+        margin-left: .1rem;
+
+        font-size: 1.45rem;
+    }
+
+    .arrow {
+        margin-right: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+
+
+
+
+
+
+/* Classes for JavaScript to use */
+
+.rotate {
+    transform: rotate(180deg); 
+}
+
+.show {
+    display: block;
+}
+
+.change-color {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.move-box {
+    right: 85.3rem;
+}
