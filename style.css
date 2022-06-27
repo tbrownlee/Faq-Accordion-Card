@@ -26,6 +26,9 @@ html {
 
     /* Dividers */
     --light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* Transition */
+    --transition: 0.3s ease-in-out;
 }
 
 body {
@@ -126,7 +129,7 @@ picture {
 }
 
 .arrow {
-    transition: 0.3s ease-in-out;
+    transition: var(--transition);
 }
 
 .description {
@@ -195,7 +198,7 @@ picture {
 
         display: block;
 
-        transition: 0.3s ease-in-out;
+        transition: var(--transition);
 
         width: 18rem;
     }
