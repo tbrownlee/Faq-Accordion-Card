@@ -135,13 +135,13 @@ picture {
 .description {
     display: none;
 
+    animation: mymove 3s;
+
     margin-top: 1rem;
     padding-right: 2rem;
 
     font-size: 1.2rem;
     line-height: 1.8rem;
-
-    animation: mymove 3s;
 }
 
 
@@ -248,7 +248,7 @@ picture {
 
 
 
-
+/* Keyframes */
 @keyframes mymove {
     from {max-height: 0px;}
     to {max-height: 600px;}
