@@ -52,8 +52,12 @@ function checkIfAlreadyToggled() {
 
 
 
+
+
+
+
 /* 
-Put this in toggle(i) after the second line to make the description open slowly:
+Instead of using the animation property and a keyframe to make the .description (p element) open slowly, put this in toggle(i) after the second line.
 
 
     let id = null;

@@ -140,6 +140,8 @@ picture {
 
     font-size: 1.2rem;
     line-height: 1.8rem;
+
+    animation: mymove 3s;
 }
 
 
@@ -240,6 +242,17 @@ picture {
         line-height: 2rem;
     }
 }
+
+
+
+
+
+
+
+@keyframes mymove {
+    from {max-height: 0px;}
+    to {max-height: 600px;}
+  }
 
 
 
