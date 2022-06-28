@@ -194,7 +194,7 @@ picture {
     /* Box */
     .box-desktop-only {
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         top: 20rem;
         right: 81.7rem;
 
